@@ -1,6 +1,11 @@
 body {
-    background-color: white;
+    background-color:rgb(238, 227, 227);
 }
 li 
 { display: inline;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
 }
