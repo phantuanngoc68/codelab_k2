@@ -6,42 +6,163 @@
     <title>HTML.CSS</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.css">
 
-
-
-
-
-</head>
+  </head>
 <body>
-      <header>
-          
-        
-       <div>
-        <li><a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook" width="40" height="30"></a></li>
-        <li><input type="text" placeholder="Tìm kiếm thông tin"> &emsp;
-         
-       </div>
-        
-        
-       <div>
-        <li><a href="https://www.facebook.com/"><img src="img/home.png" alt="Facebook" width="40" height="30"></a></li> &emsp;
-       
-        <li><a href="https://www.facebook.com/watch"><img src="img/watch.png" alt="Facebook"width = "40" height="30"></a></li> &ensp;
-        <li><a href="https://www.facebook.com/marketplace/?ref=app_tab"><img src="img/market.png" alt="Facebook" width="40" height="30"></a></li>&emsp;
-        <li><a href="https://www.facebook.com/groups/feed/"><img src="img/group.png" alt="Facebook" width="40" height="30"></a></li>&emsp;
-       </div>
-       <div>
-        <li><a href="https://www.facebook.com/"><img src="img/user.png" alt="Facebook" width="40" height="30"></a></li>&emsp;
-        <li><a href="https://www.facebook.com/"><img src="img/create.png" alt="Facebook" width="40" height="30"></a></li>&emsp;
-        <li><a href="https://www.facebook.com/"><img src="img/mess.png" alt="Facebook"width="40" height="30"></a></li>&emsp;
-        <li><a href="https://www.facebook.com/"><img src="img/bell.png" alt="Facebook"width="40" height="30"></a></li>&emsp;
-        <li><a href="https://www.facebook.com/"><img src="img/triangle.png" alt="Facebook" width="40" height="30"></a></li>&emsp;
-       </div>
-
-
-
     
-    </header>  
+    <header class= "header-navbar">
+                
+     <div class="header-navbar-list">
+           
+       <div class="header-navbar-icon">
 
+          <li class="header-navbar_icon"><a href="https://www.facebook.com/"><i class=" fab fa-facebook"></i></a></li>
+          <li  class="header-navbar_icon"><input type="text" placeholder="Tìm kiếm thông tin"></a></li>
+
+      </div>
+
+        <div class="header-navbar-icon">
+          <li  class="header-navbar_icon"><a href="https://www.facebook.com/"><i class=" fas fa-home"></i></a></li>
+          <li  class="header-navbar_icon"><a href="https://www.facebook.com/watch"><i class="fas fa-camera-retro"></i></a></li> 
+          <li  class="header-navbar_icon"><a href="https://www.facebook.com/marketplace/?ref=app_tab"><i class=" fas fa-store"></i></a></li>
+          <li  class="header-navbar_icon"><a href="https://www.facebook.com/groups/feed/"><i class="  fas fa-users"></i></a></li>
+             
+      </div>
+
+     
+        <div class="header-navbar-icon">
+          <li  class="header-navbar_icon"><a href="https://www.facebook.com/"><i class="fas fa-user-circle"></i></a></li>
+          <li  class="header-navbar_icon"><a href="https://www.facebook.com/"><i class="fas fa-plus-circle"></i></a></li>
+          <li  class="header-navbar_icon"><a href="https://www.facebook.com/"><i class="fab fa-facebook-messenger"></i></a></li>
+          <li  class="header-navbar_icon"><a href="https://www.facebook.com/"><i class="fas fa-bell"></i></a></li>
+          <li  class="header-navbar_icon header-notify_item_notify"><a href=""><i class="fas fa-caret-up"></i></a>
+          
+                <div class=" header-notify">
+                  <ul class="  header-notify_list ">
+               <!---item1-->
+                    <li class="header-notify_item  ">
+                      <a href="" class=" header-notify_link">
+                      
+                        <i class="fas fa-user-circle"></i>
+                          <div class=" header-notify_info">
+                            <span class="header-notify_name">Nguyễn Trà</span>
+                            <p class="header-notify_des">Xem trang cá nhân của bạn</p>
+                          </div>
+                      </a>
+              
+                    </li>
+              <!---item2-->
+      
+                   <li class=" header-notify_item header-notify_item_notify">
+                    
+                      <a href="" class=" header-notify_link">
+                      
+                        <i class="fas fa-comment-alt"></i>
+                          <div class=" header-notify_info">
+                            <span class="header-notify_name">Đóng góp ý kiến</span>
+                            <p class="header-notify_des">Góp phần cải thiện phiên bản facebook mới</p>
+                           </div>
+                      </a>
+                   
+                   </li>
+              <!---item3-->  
+
+                   <li class=" header-notify_item header-notify_item_notify">
+                    
+                    <a href="" class=" header-notify_link">
+                      
+                      <i class="fas fa-cog"></i>
+                          <div class=" header-notify_info">
+                              <span class="header-notify_name">Cài đặt & quyền riêng tư</span>
+                              
+                           </div>
+                     </a>
+                   
+                   </li>
+                <!---item4-->    
+                   <li class=" header-notify_item header-notify_item_notify">
+                    
+                    <a href="" class=" header-notify_link">
+                      
+                      <i class="fas fa-question-circle"></i>
+                          <div class=" header-notify_info">
+                              <span class="header-notify_name">Trợ giúp & hỗ trơ </span>
+                              
+                           </div>
+                     </a>
+                   
+                   </li>
+
+                 <!---item4-->   
+                   <li class=" header-notify_item header-notify_item_notify">
+                    
+                    <a href="" class=" header-notify_link">
+                      
+                      <i class="fas fa-moon"></i>
+                          <div class=" header-notify_info">
+                              <span class="header-notify_name">Hiển thị tùy chọn</span>
+                             
+                           </div>
+                     </a>
+                   
+                   </li>
+                
+                  <!---item5-->  
+                   <li class=" header-notify_item header-notify_item_notify">
+                    
+                    <a href="" class=" header-notify_link">
+                      
+                      <i class="fas fa-sign-out-alt"></i>
+                          <div class=" header-notify_info">
+                              <span class="header-notify_name">Đăng xuất</span>
+                             
+                           </div>
+                     </a>
+                   
+                   </li>
+
+                 <!---item6-->   
+                   <li class=" header-notify_item header-notify_item_notify">
+                    
+                    <a href="" class=" header-notify_link">
+                      
+                        <i class="fas fa-user-circle"></i>
+                          <div class=" header-notify_info">
+                            <p class="header-notify_des">Góp phần cài thiện phiên bản facebook mới</p>
+                             
+                           </div>
+                     </a>
+                   
+                   </li>
+                  <!---item7-->  
+
+        <li class=" header-notify_item header-notify_item_notify">
+                    
+           <a href="" class=" header-notify_link">
+                      
+                        
+              <div class=" header-notify_info">
+                           
+                <ul class="header-nofity-footer">
+                  <span class="header-nofity-footer1"> <a href="" class="header-nofity-footer1-link" > Quyền riêng tư</a></span>
+                  <span class="header-nofity-footer1"> <a href="" class="header-nofity-footer1-link" > Điều khoản</a></span>
+                  <span class="header-nofity-footer1"> <a href="" class="header-nofity-footer1-link" > Quảng cáo</a></span>
+                  <span class="header-nofity-footer1"> <a href="" class="header-nofity-footer1-link" > Lựa chọn quảng cáo</a></span>
+                  <span class="header-nofity-footer1"> <a href="" class="header-nofity-footer1-link" > cookie</a></span>
+                  <span class="header-nofity-footer1"> Xem thêm </span>
+                  <span class="header-nofity-footer1">Facebook@2020</span>
+                </ul>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </div>
+</div >
+</header>
+
+      
 </body>
 </html>
