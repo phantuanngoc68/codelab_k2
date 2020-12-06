@@ -128,3 +128,79 @@ to{
     font-size: 8px;
     
 }
+.creat_plus{
+    position: absolute;
+    top:5%;
+    width:400px;
+    background-color:rgb(236, 232, 232);
+    right:265px;
+    border: 1px solid #D3D3D3;
+    cursor:default;
+    animation: Animation2 ease-in 0.3 ;
+    
+    display: none;
+
+}
+.creat_plus-list{
+  padding-left: 0;
+  list-style: none;
+}
+.creat_plus-item:hover{
+  background-color: white;
+}
+.creat_plus-item-has:hover .creat_plus{
+    display: block;
+}
+.creat_plus::before{
+    content: "";
+    display: block;
+    position:absolute;
+    width: 100%;
+    height: 15%;
+    
+    left: 0;
+    top:-16px;
+    
+}
+.creat_plus-link{
+  display: flex;
+  padding:8px;
+  text-decoration: none;
+}
+.creat_plus-info{
+    margin-left: 2px;
+
+}
+.creat_plus-name{
+    color: black;
+ font-size: 14px;
+ font-weight: 600;
+
+}
+.creat_plus-des{
+    font-size: 12px;
+  color: rgb(131, 127, 127);
+  line-height: 2px;
+
+}
+.creat_plus::before{
+    content: "";
+    display: block;
+    position:absolute;
+    width: 100%;
+    height: 15%;
+    
+    left: 0;
+    top:-16px;
+    
+}
+@keyframes Animation2{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+      transform: scale(1);
+    }
+    }
