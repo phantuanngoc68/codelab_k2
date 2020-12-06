@@ -107,7 +107,7 @@ to{
 }
 .header-notify_name{
  color: black;
- font-size: 15px;
+ font-size: 14px;
  font-weight: 600;
 }
 .header-notify_des{
@@ -128,7 +128,7 @@ to{
     font-size: 8px;
     
 }
-.creat_plus{
+.create_plus{
     position: absolute;
     top:5%;
     width:400px;
@@ -141,17 +141,17 @@ to{
     display: none;
 
 }
-.creat_plus-list{
+.create_plus-list{
   padding-left: 0;
   list-style: none;
 }
-.creat_plus-item:hover{
+.create_plus-item:hover{
   background-color: white;
 }
-.creat_plus-item-has:hover .creat_plus{
+.create_plus-item-has:hover .create_plus{
     display: block;
 }
-.creat_plus::before{
+.create_plus::before{
     content: "";
     display: block;
     position:absolute;
@@ -162,28 +162,28 @@ to{
     top:-16px;
     
 }
-.creat_plus-link{
+.create_plus-link{
   display: flex;
   padding:8px;
   text-decoration: none;
 }
-.creat_plus-info{
+.create_plus-info{
     margin-left: 2px;
 
 }
-.creat_plus-name{
+.create_plus-name{
     color: black;
  font-size: 14px;
  font-weight: 600;
 
 }
-.creat_plus-des{
+.create_plus-des{
     font-size: 12px;
   color: rgb(131, 127, 127);
   line-height: 2px;
 
 }
-.creat_plus::before{
+.create_plus::before{
     content: "";
     display: block;
     position:absolute;
