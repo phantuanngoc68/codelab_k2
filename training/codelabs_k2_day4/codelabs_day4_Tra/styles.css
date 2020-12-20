@@ -1,40 +1,111 @@
 .header-navbar{
-     height: 120px;
+    top:-8px;
+     height: 46px;
      width: 100%;
-    background-color:#ccc;
+    background-color:rgb(252, 252, 252);
+    position: fixed;
     
 }
+
 .header-navbar-list{
     
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
+   
+   
 }
+.header-navbar_text{
+   
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(240, 236, 236);
+    
+}
+
 
 .header-navbar-icon{
     list-style: none;
     padding-left: 0;
-     margin: auto 16px;
-}
-.header-navbar_icon{
+    }
+.header-navbar_icon1,
+.header-navbar_icon2,
+.header-navbar_icon3,
+.header-navbar_icon123
+{
     display: inline-block;
-    margin: 0 10px;
-    
+    font-size: 21px;
 }
+
+.header-navbar_icon1{
+    margin: 0 5px;
+    flex: 1;
+  }
+  /*.header-navbar_icon2{
+    
+    margin: 0 60px;
+    flex: 1;
+  }*/
+  .header-navbar_icon2{
+      font-size: 18px;
+      display:inline-block;
+      justify-content: center;
+  }
+  .header-navbar_btn{
+      width: 120px;
+      height: 33px;
+     margin: 0 18px;
+     border: none;
+     outline: none;
+     background-color:rgb(252, 252, 252) ;
+     
+      
+     
+  }
+  .header-navbar_btn:hover{
+     background-color: rgb(240, 236, 236);
+     border-radius: 9px;
+  }
+
+  .header-navbar_icon3{
+    margin: 0 12px;
+    flex: 1;
+    
+  }
+
+
+
 .fab,
 .fas{
     color:black;
     
+    
+    
+
+    
    
 }
+.fa-facebook
+{
+    color:rgb(91,91,220);
+    font-size: 25px;
+    
+    
+    
+
+}
+
 .header-notify{
     
     position: absolute;
-    top:5%;
-    width: 300px;
-    background-color:rgb(236, 232, 232);
-    right: 150px;
-    border: 1px solid #D3D3D3;
-    cursor:default;
+    top:40px;
+    width: 280px;
+    background-color:white;
+    right: 20px;
+    border: 1px solid rgb(236, 232, 232);
+    cursor: pointer;
     animation: Animation ease-in 0.3 ;
     transform-origin: calc(100%-20px) top;
     display: none;
@@ -51,17 +122,7 @@
     top:-16px;
     
 }
-/*.header-notify::after{
-    content: "";
-    display: block;
-    position: absolute;
-    right:0;
-    top:-16px;
-    width: 90px;
-    height: 30px;
-    background-color: red;
-    display: none;
-}*/
+
 
 
 @keyframes Animation{
@@ -84,7 +145,8 @@ to{
  /*background-color: white;*/
 }
 .header-notify_item:hover{
-    background-color: white;
+    background-color:#cccccc;
+    
 }
 .header-notify_item_notify:hover .header-notify{
     display: block;
@@ -99,6 +161,14 @@ to{
    
 
 }
+h6{
+    margin: 1px;
+    border-top: 1px solid #ccc;
+    color: rgb(131, 127, 127);
+    
+    
+}
+
 
 .header-notify_info{
    
@@ -107,6 +177,7 @@ to{
 }
 .header-notify_name{
  color: black;
+ 
  font-size: 14px;
  font-weight: 600;
 }
@@ -130,12 +201,12 @@ to{
 }
 .create_plus{
     position: absolute;
-    top:5%;
-    width:400px;
-    background-color:rgb(236, 232, 232);
-    right:265px;
-    border: 1px solid #D3D3D3;
-    cursor:default;
+    top:40px;
+    width:360px;
+    background-color:white;
+    right:150px;
+    border: 1px solid rgb(236, 232, 232);
+    cursor: pointer;;
     animation: Animation2 ease-in 0.3 ;
     
     display: none;
@@ -146,7 +217,7 @@ to{
   list-style: none;
 }
 .create_plus-item:hover{
-  background-color: white;
+  background-color:#ccc;
 }
 .create_plus-item-has:hover .create_plus{
     display: block;
