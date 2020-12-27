@@ -1,19 +1,3 @@
-.header-navbar{
-    top:-8px;
-     height: 46px;
-     width: 100%;
-    background-color:rgb(252, 252, 252);
-    position: fixed;
-    
-}
-
-.header-navbar-list{
-    
-    display: flex;
-    justify-content:space-between;
-   
-   
-}
 .header-navbar_text{
    
     border: none;
@@ -22,63 +6,93 @@
     width: 200px;
     height: 30px;
     background-color: rgb(240, 236, 236);
+   
     
 }
-
-
-.header-navbar-icon{
-    list-style: none;
-    padding-left: 0;
-    }
 .header-navbar_icon1,
 .header-navbar_icon2,
 .header-navbar_icon3,
-.header-navbar_icon123
+.header-navbar_icon31,
+.header-navbar_icon123,
+.nav_bars
+
 {
     display: inline-block;
-    font-size: 21px;
+    font-size: 19px;
+}
+.nav_bars{
+     margin-top: 17px;
+    width: 25px;
+    height: 25px;
+    color: black;
+    display: none;
+    
+}
+.main_mobile{
+    position: fixed;
+    top:49px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+   
+    background-color:rgb(240,242,245);
+    transform: translateX(-100%);
+   /* display: none;*/
+
+}
+.nav__input{
+    display: none;
+}
+.nav__input:checked ~.main_mobile{
+  transform: translateX(0%);
+  
 }
 
-.header-navbar_icon1{
-    margin: 0 5px;
-    flex: 1;
-  }
-  /*.header-navbar_icon2{
+@media(max-width:1023px){
+    .nav_bars
+    {
+        display: block;
+    }
     
-    margin: 0 60px;
-    flex: 1;
-  }*/
-  .header-navbar_icon2{
-      font-size: 18px;
-      display:inline-block;
-      justify-content: center;
-  }
-  .header-navbar_btn{
-      width: 120px;
-      height: 33px;
-     margin: 0 18px;
-     border: none;
-     outline: none;
-     background-color:rgb(252, 252, 252) ;
-     
-      
-     
-  }
-  .header-navbar_btn:hover{
-     background-color: rgb(240, 236, 236);
-     border-radius: 9px;
-  }
+    .header-navbar_icon123{
+        display: none;
+    }
+}
 
-  .header-navbar_icon3{
-    margin: 0 12px;
-    flex: 1;
+.listmain_mobile{
+    display: flex;
     
-  }
+}
+.listmain_mobile:hover{
+  background-color: #cccccc;
+  border-radius: 10px;
 
+}
+.main_mobile-link{
+text-decoration: none;
+color: #333;
+display: block;
 
+}
+.main_name-mobile{
+  color: black;
+  font-size: 11px;
+  font-weight: 600;
+  margin: 9px;
+}
+.main_img-mobile{
+  width: 25px;
+  height: 25px;
+  margin-top:15px;
+  
+   
+
+}
 
 .fab,
-.fas{
+.fas,
+.far{
     color:black;
     
     
@@ -90,7 +104,7 @@
 .fa-facebook
 {
     color:rgb(91,91,220);
-    font-size: 25px;
+    font-size: 29px;
     
     
     
@@ -103,7 +117,7 @@
     top:40px;
     width: 280px;
     background-color:white;
-    right: 20px;
+    right: 5px;
     border: 1px solid rgb(236, 232, 232);
     cursor: pointer;
     animation: Animation ease-in 0.3 ;
@@ -125,6 +139,7 @@
 
 
 
+
 @keyframes Animation{
 from{
     opacity: 0;
@@ -141,8 +156,7 @@ to{
 }
 .header-notify_item{
  display: flex;
- /*width:100%*/
- /*background-color: white;*/
+ 
 }
 .header-notify_item:hover{
     background-color:#cccccc;
@@ -178,13 +192,13 @@ h6{
 .header-notify_name{
  color: black;
  
- font-size: 14px;
+ font-size: 12px;
  font-weight: 600;
 }
 .header-notify_des{
-  font-size: 12px;
+  font-size: 11px;
   color: rgb(131, 127, 127);
-  line-height: 1px;
+  
 }
 .header-nofity-footer{
     
@@ -202,9 +216,9 @@ h6{
 .create_plus{
     position: absolute;
     top:40px;
-    width:360px;
+    width:313px;
     background-color:white;
-    right:150px;
+    right:5px;
     border: 1px solid rgb(236, 232, 232);
     cursor: pointer;;
     animation: Animation2 ease-in 0.3 ;
@@ -218,6 +232,7 @@ h6{
 }
 .create_plus-item:hover{
   background-color:#ccc;
+  border-radius: 3px;
 }
 .create_plus-item-has:hover .create_plus{
     display: block;
@@ -239,19 +254,20 @@ h6{
   text-decoration: none;
 }
 .create_plus-info{
-    margin-left: 2px;
+    margin-left: 3px;
 
 }
 .create_plus-name{
     color: black;
- font-size: 14px;
- font-weight: 600;
+ font-size: 12px;
+ font-weight: 550;
 
 }
 .create_plus-des{
-    font-size: 12px;
+    font-size: 11px;
+    margin-left: 2px;
   color: rgb(131, 127, 127);
-  line-height: 2px;
+  
 
 }
 .create_plus::before{
@@ -275,3 +291,129 @@ h6{
       transform: scale(1);
     }
     }
+    .main_name{
+        color: black;
+        font-size: 12px;
+        font-weight: 600;
+        margin-left: 3px;
+       line-height: 30px;
+        
+        
+    
+        
+    }
+.listmain{
+    list-style: none;
+    display: flex;
+    margin: 0 15px 15px 10px;
+    padding-top: 2%;
+   
+       
+        
+        
+    }
+.main_link{
+        text-decoration: none;
+    }
+.main_img{
+        width: 25px;
+        height: 25px;
+        padding-right: 1.5%;
+       
+        
+    }
+    .fa-store-alt,
+    .fa-user-circle,
+    .fa-user-friends,
+    .fa-camera-retro,
+    .fa-user,
+    .fa-users{
+        margin:9px;
+       color:#47d3d3;
+        
+    }
+    
+    
+    .fa-angle-down{
+        margin:0 10px 0px 5px;
+        color: black;
+    }
+    .listmain:hover{
+        background-color:rgb(226, 223, 223);
+        border-radius: 5px;
+       
+    }
+    h4{
+        margin:15px;
+        padding-top:3%;
+        border-top: 1px solid #ccc;
+        color: rgb(131, 127, 127);
+        font-size: 13px;
+        
+    }
+    h3{
+        color: rgb(131, 127, 127);
+        font-size: 14px;
+        padding-top:2% ;
+    }
+    .main3_list{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main3_icon{
+        float: right;
+        
+        
+    }
+    .fa-file-video,
+    .fa-search,
+    .fa-ellipsis-h{
+        font-size: 15px;
+        color: rgb(153, 151, 151);
+        margin: 0 10px;
+    }
+    .listmain3{
+     list-style: none;
+    }
+    .listmain3:hover{
+        background-color:rgb(223, 219, 219);
+        border-radius: 12px;
+        
+    }
+    .main3_link{
+        text-decoration: none;
+        
+    }
+    .main3_img{
+        width: 29px;
+        height: 29px;
+       margin-top: 15px;
+       margin-right: 8px;
+        
+    }
+    .main3_name{
+        color: black;
+        font-size: 11px;
+        font-weight: 550;
+        
+       
+       
+    }
+    .main2_img{
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+    }
+    .listmain2{
+        list-style: none;
+    }
+    h5{
+    
+        border-top: 1px solid #ccc;
+        color: rgb(131, 127, 127);
+        
+        
+    }   
+     
+
