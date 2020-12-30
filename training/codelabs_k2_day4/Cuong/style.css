@@ -22,16 +22,16 @@
             width: 43px;
             height: 43px;
             border-radius: 50%;
-            margin: 10px 0px;
-            margin-left: 10px;
+            margin: 0.8% 0%;
+            margin-left: 0.4%;
         }
 
         #search {
 
-            padding: 13px 0px 0px 10px;
+            padding: 1% 0px 0px 1%;
             background-color: rgba(68, 63, 63, 0.897);
             border-radius: 40px;
-            margin: 10px 90px 10px 10px;
+            margin: 0.7% 5% 0.8% 0.8%;
         }
 
         input:focus,
@@ -58,11 +58,10 @@
 
         .fa-search {
             font-size: 15px !important;
-            margin-right: 5px;
         }
 
         .icon {
-            padding: 19px 54px;
+            padding: 1.5% 3.6%;
             font-size: 25px;
         }
 
@@ -109,12 +108,11 @@
         .fa-caret-down {
             padding: 12px 16px;
         }
-        .dropdown{
-            width: 20%;
-            height: 30%;
-            background-color: rgba(27, 25, 25, 0.897);
-            
+
+        .menu-responsive{
+            display: none;
         }
+        
         .left{
             width: 20%;
             background-color: blueviolet;
@@ -175,10 +173,10 @@
             display: flex;
             flex-direction: column;
         }
-        .right .taitro{
+        .right .marketing{
             height: 50%;
         }
-        .right .taitro div{
+        .right .marketing div{
             height: 35%;
             margin-top: 5%;
             background-color: cornsilk;
@@ -190,4 +188,24 @@
         .right .birthday{
             height: 15%;
             background-color: cyan;
+        }
+        @media only screen and (max-width: 800px){
+            .left{
+                display: none;
+            }
+            .mid{
+                width: 65%;
+            }
+            .right{
+                width: 35%;
+            }
+            .menu div{
+                display: none;
+            }
+            .menu-responsive{
+                display: inline !important;
+            }
+            .icon, .menu-responsive{
+                padding: 2% 3.5%;
+            }
         }
