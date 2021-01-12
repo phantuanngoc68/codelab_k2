@@ -1,3 +1,6 @@
+
+
+
 .header-navbar_text{
    
     border: none;
@@ -19,6 +22,9 @@
 {
     display: inline-block;
     font-size: 19px;
+}
+.header-navbar_icon3{
+    cursor: pointer;
 }
 .nav_bars{
      margin-top: 17px;
@@ -59,7 +65,32 @@
         display: none;
     }
 }
-
+.main1{
+           
+    height: 1200px;
+    background-color:rgb(240,242,245);
+  padding-right: 19.5%;
+  margin-top: 57px;
+  position: fixed;
+ 
+    
+}
+.main2{
+    height: 1200px;
+   background-color: rgb(240,242,245);
+   margin-top: 57px;
+   
+}
+.main3{
+    height: 1200px;
+    background-color:rgb(240,242,245);
+    padding-left: 15%;
+    padding-right: 5.33333%;
+    position: fixed;
+    margin-right: 0;
+    margin-top: 57px;
+   
+}
 .listmain_mobile{
     display: flex;
     
@@ -94,23 +125,12 @@ display: block;
 .fas,
 .far{
     color:black;
-    
-    
-    
-
-    
-   
 }
 .fa-facebook
 {
     color:rgb(91,91,220);
     font-size: 29px;
-    
-    
-    
-
 }
-
 .header-notify{
     
     position: absolute;
@@ -136,10 +156,6 @@ display: block;
     top:-16px;
     
 }
-
-
-
-
 @keyframes Animation{
 from{
     opacity: 0;
@@ -172,18 +188,12 @@ to{
     display: flex;
     padding: 8px;
     text-decoration: none;
-   
-
 }
 h6{
     margin: 1px;
     border-top: 1px solid #ccc;
     color: rgb(131, 127, 127);
-    
-    
 }
-
-
 .header-notify_info{
    
     margin-left: 2px;
@@ -214,16 +224,17 @@ h6{
     
 }
 .create_plus{
-    position: absolute;
+   
     top:40px;
     width:313px;
     background-color:white;
     right:5px;
+    position: absolute;
     border: 1px solid rgb(236, 232, 232);
     cursor: pointer;;
     animation: Animation2 ease-in 0.3 ;
+    display:none;
     
-    display: none;
 
 }
 .create_plus-list{
@@ -319,6 +330,7 @@ h6{
         width: 25px;
         height: 25px;
         padding-right: 1.5%;
+        border-radius: 15px;
        
         
     }
@@ -378,7 +390,7 @@ h6{
     }
     .listmain3:hover{
         background-color:rgb(223, 219, 219);
-        border-radius: 12px;
+        border-radius: 3px;
         
     }
     .main3_link{
@@ -390,6 +402,8 @@ h6{
         height: 29px;
        margin-top: 15px;
        margin-right: 8px;
+       margin-left: 5px;
+       border-radius: 15px;
         
     }
     .main3_name{
@@ -415,5 +429,178 @@ h6{
         
         
     }   
-     
+    
+    .link_topDev{
+        text-decoration: none;
+        
+    }
+    .icon_img{
+        width: 30px;
+        height: 30px;
+        margin: 3px 0 1px 10px;
+        border-radius: 20px;
+        
+    }
+    .icon_img:hover{
+        background-color: rgb(224, 220, 220);
+    }
+    .texticon{
+        font-size: 13px;
+        font-weight: 600;
+        margin: 12px 0 0 5px;
+        padding:0;
+       
+    }
+    .text{
+        margin: 0 0 0 45px;
+        font-size: 11px;
+        color: rgb(87, 85, 85);
+        font-weight: 550;
+    }
+    .head_icon{
+       margin: 0;
+       padding: 0;
+       display: inline-flex;
+       
+    }
+    .fa-ellip{
+        margin-top: 8px;
+        margin-left: 322px;
+        list-style: none;
+    }
+    .textarea{
+        font-size: 13px;
+        margin: 7px;
+    }
+    .listlink{
+        margin: 7px;
+    }
+    .link{
+        font-size: 13px;
+        color: #317de0;
+        text-decoration: none;
+       
+    }
+    
+    .fa-hand-point-right{
+        color: rgb(223, 238, 11);
+        font-size: 15px;
+        margin-left: 2px;
+       
+    }
+    .img_facebook{
+        width: 467px;
+        height: 220px;
+    }
+    .text_top{
+        margin: 7px;
+        font-size: 14px;
+        font-weight: 550;
+        color: black;
+    }
+    .linktopdev{
+        border: 1px solid #ccc;
+        background-color: rgb(240,242,245);
+    }
+    .comment{
+        margin: 10px;
+    }
+    .button{
+        display: flex;
+        justify-content: space-around;
+        width: 110px;
+        height: 20px;
+    }
+    .btn{
+        list-style: none;
+        background-color: transparent;
+        color: rgb(99, 96, 96);
+        font-size: 12px;
+        font-weight: 550;
+        cursor: pointer;
+        
+    }
+    .list_fa_thumbs{
+        font-size: 15px;
+        border: 1px solid #ccc;
+        width: 100px;
+        height: 25px;
+        display: flex;
+        justify-content: space-around;
+        
+        background-color: #fff;
+        border-radius: 50px;
+        display: none;
+        
+    }
+    .fa-gratipay{
+        color: red;
+        margin-top: 5px;
+    }
+    
+    .fa-laugh,
+    .fa-grin-beam-sweat{
+        color: rgb(255, 174, 0);
+        margin-top: 5px;
+    }
+    .list_fa_thumbs{
+        transform: translateY(-50px);
+    }
+    .btn:hover .list_fa_thumbs{
+        display: block;
+    }
+    .button:hover{
+        background-color: #ccc;
+        border-radius: 2px;
+    }
+    .box_comment{
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        width: 350px;
+        height: 30px;
+        background-color: rgb(208, 212, 216);
+    }
+    .list_comment{
+        display: none;
+    }
+    .fa-user-edit,
+    .fa-history,
+    .fa-chart-bar,
+    .fa-gamepad,
+    .fa-gg-circle{
+        margin-left: 2px;
+        margin-right: 3px;
+        color: #317de0;
+    }
+    .fa-sms{
+        margin-left: 2px;
+        margin-right: 3px;
+        color: purple;
+    }
+    .fa-cloud-sun{
+        margin-left: 2px;
+        margin-right: 3px;
+        color: rgb(153, 224, 11);
+    }
+    .click_hidden{
+        display: none;
+    }
+    .click_main1{
+        cursor: pointer;
+    }
+    .fa-arrow-down{
+        margin-left: 8px;
+        margin-right: 5px;
+        color: black;
+    }
+    .listmain3_click{
+        display: none;
+    }
+    .click_main2{
+        cursor: pointer;
+    }
+    .header-navbar_create{
+        margin-top: 120px;
+    }
 

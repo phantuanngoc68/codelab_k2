@@ -16,6 +16,10 @@
             padding: 0;
            
         }
+        .header{
+          position: fixed;
+          width: 100%;
+        }
         body{
             margin: 0;
         }
@@ -23,6 +27,7 @@
             background-color:rgb(255,255,255);
             height: 54px;
             list-style: none;
+            box-shadow: 1px 1px 1px rgb(139, 137, 137);
         }
         .navbar1_head{
             display:flex;
@@ -48,24 +53,6 @@
         .header-navbar_icon31{
             margin:10px ;
         }
-        .main1{
-           
-           height: 1000px;
-           background-color:rgb(240,242,245);
-         padding-right: 15%;
-           
-       }
-       .main2{
-           height: 1000px;
-          background-color: rgb(240,242,245);
-          
-       }
-       .main3{
-           height: 1000px;
-           background-color:rgb(240,242,245);
-           padding-left: 35%;
-           padding-right: 5%;
-       }
        .fa-home,
        .fa-store,
        .fa-plus-circle,
@@ -142,7 +129,7 @@
     margin: 10px;
     background-color: rgb(255,255,255);
     border-radius: 10px;
-    height: 500px;
+    height: 565px;
 }
 h3{
     color: black;
@@ -186,7 +173,7 @@ h3{
 </head>
 <body>
     <div class= "grid">
-           <div class="row no-gutters">
+           <div class="row no-gutters header">
 <!---Create navbar-->
                <div class="col l-4 m-3 c-4">
                    <div class="navbar1">
@@ -269,8 +256,9 @@ h3{
           
                     <!---hover vào icon create(tạo) facebook-->
                     
-                  <li  class="header-navbar_icon3 create_plus-item-has"><i class="fas fa-plus-circle" title="Tạo"></i></a>
-                    <div class="create_plus">
+                  <li  class="header-navbar_icon3 create_plus-item-has" onclick="myfunction3();"><i class="fas fa-plus-circle" title="Tạo"></i>
+                  
+                   <div class="create_plus">
                         <ul class="create_plus-list">
                           <li class="create_plus-item">
                             <a href="" class="create_plus-link">
@@ -476,6 +464,7 @@ h3{
                     </li>  
                     </div>
                 </div>
+                </div>
             </div> 
 <!--Create main-->
  <div class="grid">
@@ -498,9 +487,38 @@ h3{
            <li class="listmain">
              <p><a href="" class="main_link"><i class="fas fa-camera-retro"></i><span class="main_name">Video</span></a></p>
            </li>
-           <li class="listmain">
-             <p><a href="" class="main_link"><i class="fas fa-angle-down"></i><span class="main_name">Xem thêm</span></a></p>
+           <li class="listmain click_main1" onclick="myfunction1();">
+             <p class="main_link"><i class="fas fa-angle-down"></i><span class="main_name">Xem thêm</span></p>
            </li>
+           <div class="click_hidden">
+           <li class="listmain ">
+            <p><a href="https://www.facebook.com/" class="main_link"><i class="fab fa-gratipay"></i><span class="main_name">Chiến dịch gây quỹ</span></a></p>
+          </li>
+          <li class="listmain">
+            <p><a href="https://www.facebook.com/" class="main_link"><i class="fas fa-user-edit"></i><span class="main_name">Danh sách bạn bè</span></a></p>
+          </li>
+          <li class="listmain">
+            <p><a href="https://www.facebook.com/" class="main_link"><i class="fas fa-history"></i><span class="main_name">Kỉ niệm</span></a></p>
+          </li>
+          <li class="listmain">
+            <p><a href="https://www.facebook.com/" class="main_link"><i class="fas fa-chart-bar"></i><span class="main_name">Trình quản lý quảng cáo</span></a></p>
+          </li>
+          <li class="listmain">
+            <p><a href="https://www.facebook.com/" class="main_link"><i class="fas fa-sms"></i><span class="main_name">Messenger</span></a></p>
+          </li>
+          <li class="listmain">
+            <p><a href="https://www.facebook.com/" class="main_link"><i class="fas fa-cloud-sun"></i><span class="main_name">Thời tiết</span></a></p>
+          </li>
+          <li class="listmain">
+            <p><a href="https://www.facebook.com/" class="main_link"><i class="fas fa-gamepad"></i><span class="main_name">Trò chơi</span></a></p>
+          </li>
+          <li class="listmain">
+            <p><a href="" class="main_link"><i class="fab fa-gg-circle"></i><span class="main_name">Ứng phó khẩn cấp</span></a></p>
+          </li>
+          <li class="listmain">
+            <p><a href="" class="main_link"><i class="fas fa-arrow-down"></i><span class="main_name">Ẩn bớt</span></a></p>
+          </li>
+        </div>
            <h4><p>Lối tắt của bạn</p></h4>
            <li class="listmain">
              <p><a href="" class="main_link"><img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-0/p640x640/96015547_10213866124406265_1493440625096261632_o.jpg?_nc_cat=101&ccb=2&_nc_sid=825194&_nc_ohc=JDb1dr2lM9MAX_S2PPa&_nc_ht=scontent.fhan2-1.fna&tp=6&oh=6740a54b1aebdf67f6dd107cd4ae2b56&oe=60013291" alt="" class="main_img"><span class="main_name">Nhóm sinh viên thông tin NEU</span></a></p>
@@ -517,10 +535,30 @@ h3{
                <a href="" class="main_link"><img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.0-9/69442066_105264750852735_6531558321252466688_o.jpg?_nc_cat=1&ccb=2&_nc_sid=09cbfe&_nc_ohc=6KfvuM77_GEAX8LEc07&_nc_ht=scontent.fhan2-3.fna&oh=b15dd0da3eb6239a6e5c4b33be89fcd4&oe=60025421" alt="" class="main_img"><span class="main_name">1977 Vlog</span></a>
              </p>
            </li>
-           <li class="listmain">
-             <p><a href="" class="main_link"><i class="fas fa-angle-down"></i><span class="main_name">Xem thêm</span></a></p>
+           <li class="listmain click_main2" onclick="myfunction2();">
+             <p class="main_link"><i class="fas fa-angle-down"></i><span class="main_name">Xem thêm</span></p>
            </li>
-       
+           <div class="listmain3_click">
+           <li class="listmain3">
+            <p><a href="" class="main3_link"><img src="https://scontent.fhan2-3.fna.fbcdn.net/v/l/t1.0-9/1538768_596842713723039_1259317399_n.jpg?_nc_cat=1&ccb=2&_nc_sid=09cbfe&_nc_ohc=fU5soq52wcMAX-X52gk&_nc_ht=scontent.fhan2-3.fna&oh=8deb1f0c34efb4934be053c1836e9746&oe=60031E71" alt="" class="main3_img"><span class="main3_name">VTV-Đài truyền hình Việt Nam</span></a></p>
+          </li>
+          <li class="listmain3">
+            <p><a href="" class="main3_link"><img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t31.0-8/13558657_10154299187657838_4218160330552521709_o.png?_nc_cat=1&ccb=2&_nc_sid=09cbfe&_nc_ohc=E4Ou_3Ki2ZYAX-_qSd1&_nc_ht=scontent.fhan2-3.fna&oh=1a568aed77a4e82a95727310ae5a44c6&oe=60012068" alt="" class="main3_img"><span class="main3_name">Google</span></a></p>
+          </li>
+          <li class="listmain3">
+            <p>
+              <a href="" class="main3_link"><img src="https://scontent.fhan2-5.fna.fbcdn.net/v/t31.0-8/11722352_847911028591362_3993355630939377142_o.png?_nc_cat=107&ccb=2&_nc_sid=09cbfe&_nc_ohc=6b12lBwQ_eEAX9mxGpC&_nc_ht=scontent.fhan2-5.fna&oh=15308ac8591ba353e11173dfabe89a15&oe=60034060" alt="" class="main3_img"><span class="main3_name">TopDev</span></a>
+            </p>
+          </li>
+          <li class="listmain3">
+            <p>
+              <a href="" class="main3_link"><img src="https://scontent.fhan2-6.fna.fbcdn.net/v/t1.0-9/123073923_10158626911441061_9172192603913148521_n.jpg?_nc_cat=100&ccb=2&_nc_sid=09cbfe&_nc_ohc=vV9M2RNBvwEAX_yJsBl&_nc_ht=scontent.fhan2-6.fna&oh=3d82a755004a5d80e22c248591223c01&oe=60021124" alt="" class="main3_img"><span class="main3_name">Nguyễn Nhật Ánh FCVN</span></a>
+            </p>
+          </li>
+          <li class="listmain">
+            <p><a href="" class="main_link"><i class="fas fa-arrow-down"></i><span class="main_name">Ẩn bớt</span></a></p>
+          </li>
+        </div>
     </div>
 </div>  
 <div class="col l-4 m-6 c-12">
@@ -591,14 +629,88 @@ h3{
      </div>
      <div class="col l-12 m-12 c-12">
      <div class="main5">
-        <h3>Tin Tức</h3>
+        <div class="head_icon">
+         <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/134086014_3523914194324352_2632955954584252330_n.jpg?_nc_cat=110&ccb=2&_nc_sid=09cbfe&_nc_ohc=HtSQ7cBLPMEAX9h38QO&_nc_ht=scontent.fhan2-4.fna&oh=44ce8a2cd0449d55b0444724813f953a&oe=60230F99" class ="icon_img"alt="">
+          <p class = "texticon">TopDev</p> 
+         <li class="fa-ellip"> <i class="fas fa-ellipsis-h"></i></li>
+          
+        </div>
+        <p class="text">Hôm qua lúc 15:27 .</p> 
+        <p class="textarea">Bằng cách giảm kích thước file CSS, máy chủ sẽ mất ít thời gian load, khiến cho trang web nhanh hơn. Và bài này sẽ cho các bạn biết vài hữu ích trong chuyện này
+        </p>
+        <div class="listlink">
+        <a href="" class="link">#TopDev</a>
+        <a href="" class="link">#Viec_lam_IT_hang_dau</a></div>
+      
+         <p class="textarea">TopDev việc làm IT hàng đầu:</p>
+         <p class="textarea" ><i class="fas fa-hand-point-right"></i>Đừng bỏ lỡ việc làm IT tại:<a href="" class="link">https://topdev.vn/
+        </a></p>
+        <p class="textarea" ><i class="fas fa-hand-point-right"></i>Tạo CV chất lượng dành cho developer:<a href="" class="link">https://topdev.vn/tao-cv-online/
+
+        </a></p>
+        <p class="textarea" ><i class="fas fa-hand-point-right"></i>Các bài viết công nghệ chuyên sâu:<a href="" class="link"> https://topdev.vn/blog
+
+        </a></p>
+        <a href="https://topdev.vn/blog/11-cong-cu-huu-ich-de-kiem-tra-va-toi-uu-hoa-cac-file-css/?utm_source=facebook&utm_medium=topdev_page&utm_campaign=blog&fbclid=IwAR0i5-Xpbk2Zu9GjKpoL65LtEUgL4-OKYqFihTy1R8AZd_nk1gPqxcryy0I" class="link_topDev">
+        <img src="https://external.fhan2-6.fna.fbcdn.net/safe_image.php?d=AQEzFiH-lCoDedcQ&w=500&h=261&url=https%3A%2F%2Ftopdev.vn%2Fblog%2Fwp-content%2Fuploads%2F2020%2F09%2Fcongcu.jpg&cfs=1&ext=jpg&_nc_cb=1&_nc_hash=AQHkcH-LrPetB6Qd" class ="img_facebook"alt="">
+         <div class="linktopdev">
+           <p class="text">TopDev.VN</p>
+           <p class="text_top">11 công cụ hữu ích để kiểm tra và tối ưu hóa các file CSS |</p>
+           <p class="text_top">TopDev</p>
+         </div>
+        </a>
+        <div class="listcomment">
+          <h6 class="comment"></h6>
+          <div class="row ">
+            <div class="col l-4 m-4 c-4">
+                <div class=" button">
+                 <li class="btn "><i class="far fa-thumbs-up"></i> Thích
+         <!--  <div class="list_fa_thumbs">
+            <i class="fas fa-thumbs-up"></i>
+            <i class="fab fa-gratipay"></i>
+            <i class="fas fa-laugh"></i>
+            <i class="fas fa-grin-beam-sweat"></i>
+           </div>-->
+          
+          
+                   </li>
+                 </div>
+            </div>
+            <div class="col l-4 m-4 c-4">
+              <div class=" button">
+                  <li class="btn" onclick="myfunction();"><i class="far fa-comment-alt"></i> Bình luận</li>
+              </div>
+            </div>
+           
+            
+            <div class="col l-4 m-4 c-4">
+              <div class=" button">
+          <li class="btn"><i class="fas fa-share"></i> Chia sẻ</li>
+              </div>
+            </div>
+          </div>
+       
+       <div class="list_comment">
+        <h6 class="comment"></h6>
+             <ul class="icon_comment">
+              <p><a href="" class="mainbox_link"><i class="far fa-user-circle"></i></a>
+                <input type="text" class="box_comment" placeholder="  Viết bình luận công khai... "></p>
+             </ul>
+       </div>
+      
+        
+      
+      
+      
+      
       </div>
     </div>
     </div>
 
 </div>
-
-    
+  
+  
+</div>  
 
 
 
@@ -644,6 +756,84 @@ h3{
 </div>
 
 </div>
+<script>
+  function myfunction(){
+ var main5Element = document.querySelector('.main5 ');
+ 
+ Object.assign(main5Element.style,{
+   height:'650px',
+   
+   
+ });
+var commentElement = document.querySelector('.list_comment ');
+Object.assign(commentElement.style,{
+   display:'block',
+   
+   
+ });
+ 
+}
 
+function myfunction1(){
+  var main1Element = document.querySelector('.click_hidden');
+  Object.assign(main1Element.style,{
+    display:'block',
+  });
+  var main11Element = document.querySelector('.click_main1');
+  Object.assign(main11Element.style,{
+    display:'none',
+  });
+  var main12Element = document.querySelector('.main1');
+  Object.assign(main12Element.style,{
+    height:'1200px',
+    overflow:'scroll',
+    position:'relative'
+   
+  });
+  var main123Element = document.querySelector('.main2');
+  Object.assign(main123Element.style,{
+    
+    position:'fixed'
+   
+  });
+  
+
+}
+function myfunction2(){
+  var main123Element = document.querySelector('.listmain3_click');
+  Object.assign(main123Element.style,{
+    
+    display:'block'
+   
+  });
+  var main124Element = document.querySelector('.main1');
+  Object.assign(main124Element.style,{
+    height:'1200px',
+    overflow:'scroll',
+    position:'relative'
+   
+  });
+  var main1234Element = document.querySelector('.main2');
+  Object.assign(main1234Element.style,{
+    
+    position:'fixed'
+   
+  });
+  var clickElement = document.querySelector('.click_main2');
+  Object.assign(clickElement.style,{
+    display:'none',
+  });
+  
+}
+/*function myfunction3(){
+  var createElement = document.querySelector('.create_plus');
+  Object.assign(createElement.style,{
+    display:'block'
+  });
+  
+}*/
+
+
+</script>
 </body>
 </html>
