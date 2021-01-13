@@ -72,6 +72,7 @@
   padding-right: 19.5%;
   margin-top: 57px;
   position: fixed;
+  z-index: 2;
  
     
 }
@@ -79,6 +80,7 @@
     height: 1200px;
    background-color: rgb(240,242,245);
    margin-top: 57px;
+   z-index: 2;
    
 }
 .main3{
@@ -89,6 +91,7 @@
     position: fixed;
     margin-right: 0;
     margin-top: 57px;
+    z-index: 2;
    
 }
 .listmain_mobile{
@@ -143,6 +146,7 @@ display: block;
     animation: Animation ease-in 0.3 ;
     transform-origin: calc(100%-20px) top;
     display: none;
+    
     
 }
 .header-notify::before{
