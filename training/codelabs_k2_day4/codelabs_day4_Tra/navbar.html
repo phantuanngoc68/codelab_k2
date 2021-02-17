@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="c.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            position: fixed;
+            width: 100%;
+            z-index: 5;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .navbar1 {
+            background-color: rgb(255, 255, 255);
+            height: 54px;
+            list-style: none;
+            box-shadow: 1px 1px 1px rgb(139, 137, 137);
+        }
+        
+        .navbar1_head {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .header-navbar_icon1,
+        .header-navbar_icon123 {
+            margin: 10px;
+        }
+        
+        .navbar2_head {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .header-navbar_icon2 {
+            margin: 10px;
+        }
+        
+        .navbar3_head {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .header-navbar_icon3,
+        .header-navbar_icon31 {
+            margin: 10px;
+        }
+        
+        .fa-home,
+        .fa-store,
+        .fa-plus-circle,
+        .fa-facebook-messenger,
+        .fa-bell,
+        .fa-caret-up {
+            margin-top: 10px;
+        }
+        
+        .box {
+            width: 230px;
+            height: 30px;
+            border: none;
+            outline: none;
+            border-radius: 12px;
+            background-color: rgb(248, 245, 245);
+            margin: 9px 3px;
+            align-items: center;
+        }
+        
+        .box:hover {
+            background-color: rgb(228, 225, 225);
+        }
+        
+        .listbox {
+            background-color: rgb(255, 255, 255);
+            margin: 9px;
+            height: 100px;
+            border-radius: 10px;
+        }
+        
+        .mainbox_link {
+            list-style: none;
+        }
+        
+        .listboxmain2_btn_link {
+            text-decoration: none;
+        }
+        
+        .box_items {
+            margin: 10px;
+        }
+        
+        .mainbox4 {
+            margin: 10px;
+            background-color: rgb(255, 255, 255);
+            height: 55px;
+            border-radius: 10px;
+            padding-top: 5px;
+        }
+        
+        .main4 {
+            margin: 8px;
+            width: 180px;
+            height: 30px;
+            border: 1px solid rgb(77, 168, 228);
+            border-radius: 30px;
+            background-color: white;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .box4icon {
+            text-decoration: none;
+        }
+        
+        .fa-video {
+            color: #965598;
+            margin: 5px 5px 5px 0;
+        }
+        
+        .main4:hover {
+            background-color: rgb(228, 225, 225);
+        }
+        
+        .name {
+            font-size: 11px;
+            color: rgb(26, 121, 230);
+            font-weight: 550px;
+            margin-left: 7px;
+        }
+        
+        .main5 {
+            margin: 10px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            height: 565px;
+        }
+        
+        h3 {
+            color: black;
+            font-size: 15px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 0;
+        }
+        
+        .listicon_name {
+            color: rgb(94, 93, 93);
+            font-size: 11px;
+            font-weight: 550;
+        }
+        
+        .fa-tv {
+            color: red;
+        }
+        
+        .fa-images {
+            color: rgb(39, 216, 39);
+        }
+        
+        .fa-smile {
+            color: rgb(213, 228, 10);
+        }
+        
+        .img:hover {
+            background-color: rgb(233, 231, 231);
+            border-radius: 5px;
+        }
+        
+        .main2_link {
+            text-decoration: none;
+        }
+        
+        .item_hover:hover {
+            background-color: rgb(221, 219, 219);
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="row no-gutters header">
+            <!---Create navbar-->
+            <div class="col l-4 m-3 c-4">
+                <div class="navbar1">
+                    <div class="navbar1_head">
+                        <li class="header-navbar_icon1"><a href="https://www.facebook.com/"><i class=" fab fa-facebook"></i></a></li>
+                        <li class="header-navbar_icon123"><input type="search " class="header-navbar_text" placeholder=" Tìm kiếm thông tin"></a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l-4 m-3 c-0 ">
+                <div class="navbar1">
+                    <div class="navbar2_head">
+                        <li class="header-navbar_icon2"><a href="https://www.facebook.com/"><i class=" fas fa-home" title="Trang chủ"></i></a></li>
+                        <li class="header-navbar_icon2">
+                            <a href="https://www.facebook.com/watch"> <i class="fas fa-camera-retro" title="Watch"></i></a>
+                        </li>
+                        <li class="header-navbar_icon2"><a href="https://www.facebook.com/marketplace/?ref=app_tab"><i class=" fas fa-store" title="MarketPlace"></i></a></li>
+                        <li class="header-navbar_icon2"><a href="https://www.facebook.com/groups/feed/"><i class="  fas fa-users" title="Nhóm"></i></a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="col l-0 m-3 c-4">
+                <div class="navbar1">
+                    <div class="navbar2_head">
+                        <label for="nav-mobile-input" class="nav_bars"><i class="fas fa-bars"></i></label>
+                        <input type="checkbox" class="nav__input " id="nav-mobile-input">
+                        <main class="main_mobile">
+
+                            <li class="listmain_mobile">
+                                <p> <a href="" class="main_mobile-link"><i class="fas fa-user"></i></i><span class="main_name-mobile">Nguyễn Trà</span></a></p>
+                            </li>
+                            <li class="listmain_mobile">
+                                <p><a href="" class="main_mobile-link"><i class="fas fa-user-friends"></i><span class="main_name-mobile">Bạn bè</span></a></p>
+                            </li>
+                            <li class="listmain_mobile">
+                                <p><a href="" class="main_mobile-link"><i class="fas fa-users "></i><span class="main_name-mobile">Nhóm</span></a></p>
+                            </li>
+                            <li class="listmain_mobile">
+                                <p><a href="" class="main_mobile-link"><i class="fas fa-store-alt"></i><span class="main_name-mobile">MarkerPlace</span></a></p>
+                            </li>
+                            <li class="listmain_mobile">
+                                <p><a href="" class="main_mobile-link"><i class="fas fa-camera-retro"></i><span class="main_name-mobile">Video</span></a></p>
+                            </li>
+                            <li class="listmain_mobile">
+                                <p><a href="" class="main_mobile-link"><i class="fas fa-angle-down"></i><span class="main_name-mobile">Xem thêm</span></a></p>
+                            </li>
+                            <h4>
+                                <p>Lối tắt của bạn</p>
+                            </h4>
+                            <li class="listmain_mobile">
+                                <p>
+                                    <a href="" class="main_mobile-link"><img src="https://upload.wikimedia.org/wikipedia/vi/archive/3/30/20130619172908%21Logo-NEU.PNG" alt="" class="main_img-mobile">
+                                        <span class="main_name-mobile">Nhóm sinh viên thông tin NEU</span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li class="listmain_mobile">
+
+                                <p>
+                                    <a href="" class="main_mobile-link"><img src="https://cdn.tgdd.vn/Files/2015/09/10/698421/huong-dan-cai-dat-va-su-dung-vtv-go-0-1.png" alt="" class="main_img-mobile"><span class="main_name-mobile">Thời sự VTV</span></a>
+                                </p>
+                            </li>
+                            <li class="listmain_mobile">
+                                <p>
+                                    <a href="" class="main_mobile-link"><img src="https://vtv1.mediacdn.vn/thumb_w/650/2014/chuyen-dong-24h-1412665586489.jpg" alt="" class="main_img-mobile">
+                                        <span class="main_name-mobile">Trung tâm tin tức 24h</span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li class="listmain_mobile">
+                                <p>
+                                    <a href="" class="main_mobile-link"><img src="https://nghesiviet.vn/storage/files/7/1977vlog/1977-vlog.jpg" alt="" class="main_img-mobile"><span class="main_name-mobile">1977 Vlog</span></a>
+                                </p>
+                            </li>
+                            <li class="listmain_mobile">
+                                <p><a href="" class="main_mobile-link"><i class="fas fa-angle-down"></i><span class="main_name">Xem thêm</span></a></p>
+                            </li>
+
+
+
+
+
+                        </main>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l-4 m-3 c-4 ">
+                <div class="navbar1">
+                    <div class="navbar3_head">
+                        <li class="header-navbar_icon31"><a href="https://www.facebook.com/"><i class="fas fa-user-circle"></i></a></li>
+
+                        <!---hover vào icon create(tạo) facebook-->
+
+
+
+                        <li class="header-navbar_icon3 create_plus-item-has" onclick="myfunction3()" ;><i class="fas fa-plus-circle" title="Tạo"></i>
+
+
+                            <div class="create_plus">
+                                <ul class="create_plus-list">
+                                    <li class="create_plus-item">
+                                        <a href="" class="create_plus-link">
+                                            <i class="fas fa-edit"></i>
+                                            <div class="create_plus-info">
+                                                <span class="create_plus-name">Đăng</span>
+                                                <p class="create_plus-des">Chia sẻ Bài viết trên bảng tin.</p>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <li class="create_plus-item">
+                                        <a href="" class="create_plus-link">
+                                            <i class="fas fa-book-open"></i>
+                                            <div class="create_plus-info">
+                                                <span class="create_plus-name">Tin</span>
+                                                <p class="create_plus-des">Bạn có thể chia sẻ ảnh hoặc bài viết gì đó.</p>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <li class="create_plus-item">
+                                        <a href="" class="create_plus-link">
+                                            <i class="fas fa-star"></i>
+                                            <div class="create_plus-info">
+                                                <span class="create_plus-name">Sự kiện trong đời</span>
+                                                <p class="create_plus-des">Thêm sự kiện trong đời vào trang cá nhân</p>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <h6></h6>
+                                    <li class="create_plus-item">
+                                        <a href="" class="create_plus-link">
+                                            <i class="fas fa-bookmark"></i>
+                                            <div class="create_plus-info">
+                                                <span class="create_plus-name">Trang</span>
+                                                <p class="create_plus-des">Kết nối và chia sẻ với khách hàng hoặc fan</p>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <li class="create_plus-item">
+                                        <a href="" class="create_plus-link">
+                                            <i class="fas fa-bullhorn"></i>
+                                            <div class="create_plus-info">
+                                                <span class="create_plus-name">Quảng cáo</span>
+                                                <p class="create_plus-des">Quảng cáo các doanh nghiệp, thương hiệu hoặc tổ chức của bạn</p>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <li class="create_plus-item">
+                                        <a href="" class="create_plus-link">
+                                            <i class="fas fa-users"></i>
+                                            <div class="create_plus-info">
+                                                <span class="create_plus-name">Nhóm</span>
+                                                <p class="create_plus-des">Kết nối với những người chung sở thích</p>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <li class="create_plus-item">
+                                        <a href="" class="create_plus-link">
+                                            <i class="fas fa-plus-square"></i>
+                                            <div class="create_plus-info">
+                                                <span class="create_plus-name">Sự kiện</span>
+                                                <p class="create_plus-des">Gắn kết mọi người thông qua sự kiện riêng tư hoặc công khai</p>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <li class="create_plus-item">
+                                        <a href="" class="create_plus-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <div class="create_plus-info">
+                                                <span class="create_plus-name">Bài viết niêm yết trên Marketplace</span>
+                                                <p class="create_plus-des">Bán hàng cho người trong cộng đồng của bạn</p>
+                                            </div>
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-navbar_icon3"><a href="https://www.facebook.com/"><i class="fab fa-facebook-messenger" title="messenger"></i></a></li>
+                        <li class="header-navbar_icon3"><a href="https://www.facebook.com/"><i class="fas fa-bell" title="Thông báo"></i></a></li>
+                        <li class="header-navbar_icon3 header-notify_item_notify " onclick="myfunction4()"><i class="fas fa-caret-up" title="Tài khoản"></i>
+                            <div class=" header-notify">
+                                <ul class="header-notify_list ">
+
+                                    <li class="header-notify_item  ">
+                                        <a href="https://www.facebook.com/" class=" header-notify_link">
+
+                                            <i class="fas fa-user-circle"></i>
+                                            <div class=" header-notify_info">
+                                                <span class="header-notify_name">Nguyễn Trà</span>
+                                                <p class="header-notify_des">Xem trang cá nhân của bạn</p>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <h6></h6>
+
+                                    <li class=" header-notify_item header-notify_item_notify">
+
+                                        <a href="" class=" header-notify_link">
+
+                                            <i class="fas fa-comment-alt"></i>
+                                            <div class=" header-notify_info">
+                                                <span class="header-notify_name">Đóng góp ý kiến</span>
+                                                <p class="header-notify_des">Góp phần cải thiện phiên bản facebook mới</p>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <h6></h6>
+                                    <li class=" header-notify_item header-notify_item_notify">
+
+                                        <a href="" class=" header-notify_link">
+
+                                            <i class="fas fa-cog"></i>
+                                            <div class=" header-notify_info">
+                                                <span class="header-notify_name">Cài đặt & quyền riêng tư</span>
+
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class=" header-notify_item header-notify_item_notify">
+
+                                        <a href="" class=" header-notify_link">
+
+                                            <i class="fas fa-question-circle"></i>
+                                            <div class=" header-notify_info">
+                                                <span class="header-notify_name">Trợ giúp & hỗ trơ </span>
+
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class=" header-notify_item header-notify_item_notify">
+
+                                        <a href="" class=" header-notify_link">
+
+                                            <i class="fas fa-moon"></i>
+                                            <div class=" header-notify_info">
+                                                <span class="header-notify_name">Hiển thị tùy chọn</span>
+
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class=" header-notify_item header-notify_item_notify">
+
+                                        <a href="" class=" header-notify_link">
+
+                                            <i class="fas fa-sign-out-alt"></i>
+                                            <div class=" header-notify_info">
+                                                <span class="header-notify_name">Đăng xuất</span>
+
+                                            </div>
+                                        </a>
+
+                                    </li>
+
+
+
+                                    <li class=" header-notify_item header-notify_item_notify">
+
+                                        <a href="" class=" header-notify_link">
+
+                                            <i class="fas fa-user-circle"></i>
+                                            <div class=" header-notify_info">
+                                                <p class="header-notify_des">Góp phần cài thiện phiên bản facebook mới</p>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class=" header-notify_item header-notify_item_notify">
+
+                                        <a href="" class=" header-notify_link">
+
+
+                                            <div class=" header-notify_info">
+
+                                                <ul class="header-nofity-footer">
+                                                    <span class="header-nofity-footer1"> <a href="" class="header-nofity-footer1-link" >Quyền riêng tư</a></span>
+                                                    <span class="header-nofity-footer1"> <a href="" class="header-nofity-footer1-link" >Điều khoản</a></span>
+                                                    <span class="header-nofity-footer1"> <a href="" class="header-nofity-footer1-link" >Quảng cáo</a></span>
+                                                    <span class="header-nofity-footer1"> <a href="" class="header-nofity-footer1-link" >Lựa chọn quảng cáo</a></span>
+                                                    <span class="header-nofity-footer1"> <a href="" class="header-nofity-footer1-link" >cookie</a></span>
+                                                    <span class="header-nofity-footer1">Xem thêm </span>
+                                                    <span class="header-nofity-footer1">Facebook@2020</span>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Create main-->
+        <div class="grid">
+            <div class="row">
+                <div class="col l-4 m-0 c-0">
+                    <div class="main1">
+                        <ul class="itemsmain1">
+
+                            <li class="listmain">
+                                <p> <a href="" class="main_link"><i class="far fa-user-circle"></i><span class="main_name">Nguyễn Trà</span></a></p>
+                            </li>
+                            <li class="listmain">
+                                <p><a href="" class="main_link"><i class="fas fa-user-friends"></i><span class="main_name">Bạn bè</span></a></p>
+                            </li>
+                            <li class="listmain">
+                                <p><a href="" class="main_link"><i class="fas fa-users "></i><span class="main_name">Nhóm</span></a></p>
+                            </li>
+                            <li class="listmain">
+                                <p><a href="" class="main_link"><i class="fas fa-store-alt"></i><span class="main_name">MarkerPlace</span></a></p>
+                            </li>
+                            <li class="listmain">
+                                <p><a href="" class="main_link"><i class="fas fa-camera-retro"></i><span class="main_name">Video</span></a></p>
+                            </li>
+                            <!--
+                            <li class="listmain click_main1" onclick="show_more_less();">
+                                <p class="main_link"><i class="fas fa-angle-down"></i><span id="main_text">Xem thêm</span></p>
+                            </li>-->
+
+
+                            <div class="click_hidden">
+                                <li class="listmain ">
+                                    <p><a href="https://www.facebook.com/" class="main_link"><i class="fab fa-gratipay"></i><span class="main_name">Chiến dịch gây quỹ</span></a></p>
+                                </li>
+                                <li class="listmain">
+                                    <p><a href="https://www.facebook.com/" class="main_link"><i class="fas fa-user-edit"></i><span class="main_name">Danh sách bạn bè</span></a></p>
+                                </li>
+                                <li class="listmain">
+                                    <p><a href="https://www.facebook.com/" class="main_link"><i class="fas fa-history"></i><span class="main_name">Kỉ niệm</span></a></p>
+                                </li>
+                                <li class="listmain">
+                                    <p><a href="https://www.facebook.com/" class="main_link"><i class="fas fa-chart-bar"></i><span class="main_name">Trình quản lý quảng cáo</span></a></p>
+                                </li>
+                                <li class="listmain">
+                                    <p><a href="https://www.facebook.com/" class="main_link"><i class="fas fa-sms"></i><span class="main_name">Messenger</span></a></p>
+                                </li>
+                                <li class="listmain">
+                                    <p><a href="https://www.facebook.com/" class="main_link"><i class="fas fa-cloud-sun"></i><span class="main_name">Thời tiết</span></a></p>
+                                </li>
+                                <li class="listmain">
+                                    <p><a href="https://www.facebook.com/" class="main_link"><i class="fas fa-gamepad"></i><span class="main_name">Trò chơi</span></a></p>
+                                </li>
+                                <li class="listmain">
+                                    <p><a href="" class="main_link"><i class="fab fa-gg-circle"></i><span class="main_name">Ứng phó khẩn cấp</span></a></p>
+                                </li>
+
+                            </div>
+                            <li class="listmain click_main1" onclick="show_more_less();">
+                                <p class="main_link"><i class="fas fa-angle-down"></i><span id="main_text">Xem thêm</span></p>
+                            </li>
+                        </ul>
+                        <h4>
+                            <p>Lối tắt của bạn</p>
+                        </h4>
+                        <li class="listmain">
+                            <p>
+                                <a href="" class="main_link"><img src="https://upload.wikimedia.org/wikipedia/vi/archive/3/30/20130619172908%21Logo-NEU.PNG" alt="" class="main_img"><span class="main_name">Nhóm sinh viên thông tin NEU</span></a>
+                            </p>
+                        </li>
+                        <li class="listmain">
+
+                            <p>
+                                <a href="" class="main_link"><img src="https://cdn.tgdd.vn/Files/2015/09/10/698421/huong-dan-cai-dat-va-su-dung-vtv-go-0-1.png" alt="" class="main_img"><span class="main_name">Thời sự VTV</span></a>
+                            </p>
+                        </li>
+                        <li class="listmain">
+                            <p>
+                                <a href="" class="main_link"><img src="https://i.ytimg.com/vi/YXKI6c-5SzU/maxresdefault.jpg" alt="" class="main_img"><span class="main_name">Trung tâm tin tức 24h</span></a>
+                            </p>
+                        </li>
+                        <li class="listmain">
+                            <p>
+                                <a href="" class="main_link"><img src="https://nghesiviet.vn/storage/files/7/1977vlog/1977-vlog.jpg" alt="" class="main_img"><span class="main_name">1977 Vlog</span></a>
+                            </p>
+                        </li>
+
+
+                    </div>
+                </div>
+
+                <div class="col l-4 m-6 c-12">
+                    <div class="main2">
+
+                        <div class="row">
+
+                            <div class="col l-4 m-4 c-4">
+                                <div class="list_Item_img">
+                                    <li class="listmain2">
+                                        <a href="" class="main2_link"><img src="https://www.topcv.vn/v3/images/app.jpg" alt="" class="main2_img"></a>
+                                    </li>
+                                    <li class="listmain2">
+                                        <a href="" class="main2_link"><img src="https://www.topcv.com/dist/images/universal/meta/logo-topcv-square_inverse-802a65b6e1.png" alt="" class="main2_img"></a>
+                                    </li>
+                                    <li class="listmain2">
+                                        <a href="" class="main2_link"><img src="https://play-lh.googleusercontent.com/zh9X9iyDhoj75c-NVARRaC6SoaZMK1qQj-xPFLuY5XhEyreFiihWz_JCslwXWh-v46c" alt="" class="main2_img"></a>
+
+                                    </li>
+
+                                    <li class="angle_item">
+                                        <i class="fas fa-angle-right"></i>
+                                    </li>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-12 m-12 c-12 ">
+                            <div class="listbox">
+                                <p><a href="" class="mainbox_link"><i class="far fa-user-circle"></i></a>
+                                    <input type="text" class="box" placeholder=" Bạn đang nghĩ gì thế ?"></p>
+                                <h5></h5>
+
+                                <div class="row">
+
+                                    <div class="col l-4 m-4 c-4">
+                                        <div class="item_hover">
+                                            <div class="box_items">
+                                                <a href="" class="listboxmain2_btn_link">
+                                                    <i class="fas fa-tv"></i><span class="listicon_name">Video trực tiếp</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-4 m-4 c-4">
+                                        <div class="item_hover">
+                                            <div class="box_items">
+                                                <a href="" class="listboxmain2_btn_link">
+                                                    <i class="fas fa-images"></i><span class="listicon_name">Ảnh/Video</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4  m-4 c-4">
+                                        <div class="item_hover">
+                                            <div class="box_items">
+                                                <a href="" class="listboxmain2_btn_link">
+                                                    <i class="far fa-smile"></i><span class="listicon_name">Cảm xúc/Hoạt động</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="mainbox4">
+                                    <div class="main4">
+                                        <a href="" class="box4icon"><i class="fas fa-video"><span class="name">Tạo phòng họp mặt</span></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="main5">
+                                    <div class="head_icon">
+                                        <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/134086014_3523914194324352_2632955954584252330_n.jpg?_nc_cat=110&ccb=2&_nc_sid=09cbfe&_nc_ohc=HtSQ7cBLPMEAX9h38QO&_nc_ht=scontent.fhan2-4.fna&oh=44ce8a2cd0449d55b0444724813f953a&oe=60230F99" class="icon_img"
+                                            alt="">
+                                        <p class="texticon">TopDev</p>
+                                        <li class="fa-ellip"> <i class="fas fa-ellipsis-h"></i></li>
+
+                                    </div>
+                                    <p class="text">Hôm qua lúc 15:27 .</p>
+                                    <p class="textarea">Bằng cách giảm kích thước file CSS, máy chủ sẽ mất ít thời gian load, khiến cho trang web nhanh hơn. Và bài này sẽ cho các bạn biết vài hữu ích trong chuyện này
+                                    </p>
+                                    <div class="listlink">
+                                        <a href="" class="link">#TopDev</a>
+                                        <a href="" class="link">#Viec_lam_IT_hang_dau</a></div>
+
+                                    <p class="textarea">TopDev việc làm IT hàng đầu:</p>
+                                    <p class="textarea"><i class="fas fa-hand-point-right"></i>Đừng bỏ lỡ việc làm IT tại:<a href="" class="link">https://topdev.vn/
+        </a></p>
+                                    <p class="textarea"><i class="fas fa-hand-point-right"></i>Tạo CV chất lượng dành cho developer:<a href="" class="link">https://topdev.vn/tao-cv-online/
+
+        </a></p>
+                                    <p class="textarea"><i class="fas fa-hand-point-right"></i>Các bài viết công nghệ chuyên sâu:<a href="" class="link"> https://topdev.vn/blog
+
+        </a></p>
+                                    <a href="https://topdev.vn/blog/11-cong-cu-huu-ich-de-kiem-tra-va-toi-uu-hoa-cac-file-css/?utm_source=facebook&utm_medium=topdev_page&utm_campaign=blog&fbclid=IwAR0i5-Xpbk2Zu9GjKpoL65LtEUgL4-OKYqFihTy1R8AZd_nk1gPqxcryy0I" class="link_topDev">
+                                        <img src="https://external.fhan2-6.fna.fbcdn.net/safe_image.php?d=AQEzFiH-lCoDedcQ&w=500&h=261&url=https%3A%2F%2Ftopdev.vn%2Fblog%2Fwp-content%2Fuploads%2F2020%2F09%2Fcongcu.jpg&cfs=1&ext=jpg&_nc_cb=1&_nc_hash=AQHkcH-LrPetB6Qd" class="img_facebook" alt="">
+                                        <div class="linktopdev">
+                                            <p class="text">TopDev.VN</p>
+                                            <p class="text_top">11 công cụ hữu ích để kiểm tra và tối ưu hóa các file CSS |</p>
+                                            <p class="text_top">TopDev</p>
+                                        </div>
+                                    </a>
+                                    <div class="listcomment">
+                                        <h6 class="comment"></h6>
+                                        <div class="row ">
+                                            <div class="col l-4 m-4 c-4">
+                                                <div class=" button">
+                                                    <li class="btn "><i class="far fa-thumbs-up"></i> Thích
+                                                        <!--  <div class="list_fa_thumbs">
+            <i class="fas fa-thumbs-up"></i>
+            <i class="fab fa-gratipay"></i>
+            <i class="fas fa-laugh"></i>
+            <i class="fas fa-grin-beam-sweat"></i>
+           </div>-->
+
+
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="col l-4 m-4 c-4">
+                                                <div class=" button">
+                                                    <li class="btn" onclick="Comment_Item();"><i class="far fa-comment-alt"></i> Bình luận</li>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col l-4 m-4 c-4">
+                                                <div class=" button">
+                                                    <li class="btn"><i class="fas fa-share"></i> Chia sẻ</li>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list_comment">
+                                            <h6 class="comment"></h6>
+                                            <ul class="icon_comment">
+                                                <p><a href="" class="mainbox_link"><i class="far fa-user-circle"></i></a>
+                                                    <input type="text" class="box_comment" placeholder="  Viết bình luận công khai... "></p>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-4 m-6 c-0">
+                    <div class="main3">
+                        <h3 class="main3_list">Người liên hệ <span class="main3_icon"> <a href="" class="main3_link"><i class="fas fa-file-video"></i></a>
+                               <a href="" class="main3_link"><i class="fas fa-search"></i></a>
+                                <a href="" class="main3_link"><i class="fas fa-ellipsis-h"></i></a>
+                                 </span>
+                        </h3>
+                        <li class="listmain3">
+                            <p>
+                                <a href="" class="main3_link"><img src="https://static.wikia.nocookie.net/logos/images/9/95/VTV_gt_logo_2018.jpg/revision/latest?cb=20201128033036&path-prefix=vi" alt="" class="main3_img"><span class="main3_name">VTV-Đài truyền hình Việt Nam</span></a>
+                            </p>
+                        </li>
+                        <li class="listmain3">
+                            <p>
+                                <a href="" class="main3_link"><img src="https://assets.stickpng.com/images/588525cd6f293bbfae451a37.png" alt="" class="main3_img"><span class="main3_name">Google</span></a>
+                            </p>
+                        </li>
+                        <li class="listmain3">
+                            <p>
+                                <a href="" class="main3_link"><img src="https://topdev.vn/assets/img/logo_topdev_fb.png" alt="" class="main3_img"><span class="main3_name">TopDev</span></a>
+                            </p>
+                        </li>
+                        <li class="listmain3">
+                            <p>
+                                <a href="" class="main3_link"><img src="https://fahasasg.com.vn/wp-content/uploads/2019/09/69865672_2384521171602127_5809448158425513984_n.jpg" alt="" class="main3_img"><span class="main3_name">Nguyễn Nhật Ánh FCVN</span></a>
+                            </p>
+                        </li>
+                        <li class="listmain3">
+                            <p>
+                                <a href="" class="main3_link"><img src="https://i.pinimg.com/favicons/918f7b7c71bcc9616b99b57919b62ce85e70fec75ff45e665bb14c92.png?802a65b6e1ff349f6a70ec89a48e1d7b" alt="" class="main3_img"><span class="main3_name">TopCV Việt Nam</span></a>
+                            </p>
+                        </li>
+                        <li class="listmain3">
+                            <p>
+                                <a href="" class="main3_link"><img src="https://www.neu.edu.vn/Resources/Images/SubDomain/HomePage/vi/hinh-bai-viet/Logo%20m%C3%A0u%20%C4%91%E1%BA%A7y%20%C4%91%E1%BB%A7.jpg" alt="" class="main3_img"><span class="main3_name">NEU-Đại học Kinh tế Quốc dân</span></a>
+                            </p>
+                        </li>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <script src="main.js"></script>
+        <!--
+        /* function myfunction() { var main5Element = document.querySelector('.main5 '); Object.assign(main5Element.style, { height: '650px', }); var commentElement = document.querySelector('.list_comment '); Object.assign(commentElement.style, { display: 'block',
+        }); } function myfunction1() { var main1Element = document.querySelector('.click_hidden'); Object.assign(main1Element.style, { display: 'block', }); var main11Element = document.querySelector('.click_main1'); Object.assign(main11Element.style,
+        { display: 'none', }); var main12Element = document.querySelector('.main1'); Object.assign(main12Element.style, { height: '1200px', overflow: 'scroll', position: 'relative' }); var main123Element = document.querySelector('.main2'); Object.assign(main123Element.style,
+        { position: 'fixed' }); } function myfunction2() { var main123Element = document.querySelector('.listmain3_click'); Object.assign(main123Element.style, { display: 'block' }); var main124Element = document.querySelector('.main1'); Object.assign(main124Element.style,
+        { height: '1200px', overflow: 'scroll' }); var main1234Element = document.querySelector('.main2'); Object.assign(main1234Element.style, { position: 'fixed' }); var clickElement = document.querySelector('.click_main2'); Object.assign(clickElement.style,
+        { display: 'none', }); } /* function myfunction3() { var createElement = document.querySelector('.create_plus'); Object.assign(createElement.style, { display: 'block' }); } function myfunction4() { var createElement = document.querySelector('.header-notify');
+        Object.assign(createElement.style, { display: 'block' }); }*/
+        -->
+</body>
+
+</html>
